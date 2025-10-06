@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
 
-API_TOKEN = "8115089813:AAFYUfwX-9nEaApPlpPTZvvYU0mMFIlylRQ"
+API_TOKEN = "8166774313:AAEsNleY3OGFMK4EFMB0aJKbFdwtmvvgKg4"
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -9,12 +9,12 @@ bot = telebot.TeleBot(API_TOKEN)
 def send_welcome(message):
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(KeyboardButton(
-        "Открыть webapp",
-        web_app=WebAppInfo(url="https://ваш-домен/webapp")
+        "Магазин",
+        web_app=WebAppInfo(url="https://hasbulaue.github.io/Enduro-Sochi-/")
     ))
     bot.send_message(
         message.chat.id,
-        "Добро пожаловать! Откройте мини-приложение:",
+        "Добро пожаловать!",
         reply_markup=markup
     )
 
